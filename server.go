@@ -28,10 +28,10 @@ func setupLogOutput() {
 func main() {
 	setupLogOutput()
 	server := gin.New()
+	server.Use(gin.Recovery(), gin.Logger())
 	server.Static("/css", "./templates/css")
 	server.LoadHTMLGlob("templates/*.html")
 
-	server.Use(gin.Recovery(), middlewares.Logger())
 	// Login Endpoint: Authentication + Token creation
 	server.POST("/login", func(ctx *gin.Context) {
 		token := loginController.Login(ctx)
