@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/alansuparlan/golang-gin/entity"
+	"github.com/alansuparlan/golang-gin/repository"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -22,11 +23,14 @@ func getVideo() entity.Video {
 }
 
 func TestFindAll(t *testing.T) {
-	service := New()
+	videoRepository := repository.NewVideoRepository()
+	defer videoRepository.CloseDB()
 
-	service.Save(getVideo())
+	videoService := New(videoRepository)
 
-	videos := service.FindAll()
+	videoService.Save(getVideo())
+
+	videos := videoService.FindAll()
 
 	firstVideo := videos[0]
 	assert.NotNil(t, videos)

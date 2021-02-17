@@ -7,4 +7,4 @@ go get github.com/gin-gonic/gin
 go get gopkg.in/go-playground/validator.v9
 
 # build command
-go build -o bin/application server.go
+go build -o bin/golang-gin-poc server.go

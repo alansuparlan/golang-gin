@@ -22,9 +22,9 @@ staging:
     - apt-get update -qy
     - apt-get install -y ruby-dev
     - gem install dpl
-    - dpl --provider=heroku --app=suparlan-test-app --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=alan-test-app --api-key=$HEROKU_API_KEY
   environment:
     name: Staging
-    url: https://suparlan-test-app.herokuapp.com/
+    url: https://alan-test-app.herokuapp.com/
   only:
     - jwt
