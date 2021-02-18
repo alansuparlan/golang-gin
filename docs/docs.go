@@ -337,6 +337,13 @@ var doc = `{
             "name": "Authorization",
             "in": "header"
         }
+    },
+    "securitySchemes":{
+        "bearerAuth":{        
+            "type":"http",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
+        }
     }
 }`
 

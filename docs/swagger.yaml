@@ -203,7 +203,6 @@ securityDefinitions:
     name: Authorization
     type: apiKey
     # 1) Define the security scheme type (HTTP bearer)
-components:
   securitySchemes:
     bearerAuth:            # arbitrary name for the security scheme
       type: http
