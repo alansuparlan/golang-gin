@@ -33,7 +33,7 @@ func setupLogOutput() {
 // @securityDefinitions.apikey bearerAuth
 // @in header
 // @name Authorization
-// @Param Authorization header string true "Insert your access token" default(Bearer <Add access token here>)
+// @Param Authorization header string true "Insert your access token" default(Bearer <eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxhbiIsImFkbWluIjp0cnVlLCJleHAiOjE2MTM4OTIwMDcsImlhdCI6MTYxMzYzMjgwNywiaXNzIjoicHJhZ21hdGljcmV2aWV3cy5jb20ifQ.20lvN94xpXkuw8DgQ-AKJSeT-YR_RPebJRD_-047KNo>)
 
 func main() {
 	setupLogOutput()
