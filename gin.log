@@ -2,14 +2,6 @@
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
 
-[GIN-debug] GET    /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-[GIN-debug] HEAD   /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
-[GIN-debug] Loaded HTML Templates (4): 
-	- footer.html
-	- header.html
-	- index.html
-	- 
-
 [GIN-debug] POST   /api/v1/auth/token        --> github.com/alansuparlan/golang-gin/api.(*VideoApi).Authenticate-fm (3 handlers)
 [GIN-debug] GET    /api/v1/videos            --> github.com/alansuparlan/golang-gin/api.(*VideoApi).GetVideos-fm (4 handlers)
 [GIN-debug] POST   /api/v1/videos            --> github.com/alansuparlan/golang-gin/api.(*VideoApi).CreateVideo-fm (4 handlers)
@@ -17,8 +9,9 @@
 [GIN-debug] DELETE /api/v1/videos/:id        --> github.com/alansuparlan/golang-gin/api.(*VideoApi).DeleteVideo-fm (4 handlers)
 [GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :5000
-[GIN] 2021/02/17 - 16:25:22 | 200 |     314.272µs |             ::1 | GET      "/swagger/index.html"
-[GIN] 2021/02/17 - 16:25:22 | 200 |     238.402µs |             ::1 | GET      "/swagger/swagger-ui.css"
-[GIN] 2021/02/17 - 16:25:22 | 200 |     463.033µs |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
-[GIN] 2021/02/17 - 16:25:22 | 200 |     644.627µs |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
-[GIN] 2021/02/17 - 16:25:23 | 200 |      555.06µs |             ::1 | GET      "/swagger/doc.json"
+[GIN] 2021/02/18 - 10:51:10 | 200 |     379.126µs |             ::1 | GET      "/swagger/index.html"
+[GIN] 2021/02/18 - 10:51:10 | 200 |     305.164µs |             ::1 | GET      "/swagger/swagger-ui.css"
+[GIN] 2021/02/18 - 10:51:10 | 200 |     575.029µs |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
+[GIN] 2021/02/18 - 10:51:10 | 200 |      309.38µs |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2021/02/18 - 10:51:11 | 200 |     419.533µs |             ::1 | GET      "/swagger/doc.json"
+[GIN] 2021/02/18 - 10:51:11 | 200 |    4.145047ms |             ::1 | GET      "/swagger/favicon-32x32.png"

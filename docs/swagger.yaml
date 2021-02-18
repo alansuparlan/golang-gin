@@ -30,7 +30,6 @@ definitions:
     properties:
       author:
         $ref: '#/definitions/entity.Person'
-        type: object
       description:
         type: string
       id:
@@ -45,7 +44,6 @@ definitions:
     type: object
 info:
   contact: {}
-  license: {}
 paths:
   /auth/token:
     post:
@@ -199,9 +197,4 @@ paths:
       summary: Update videos
       tags:
       - videos
-securityDefinitions:
-  bearerAuth:
-    in: header
-    name: Authorization
-    type: apiKey
 swagger: "2.0"

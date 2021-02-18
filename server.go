@@ -36,7 +36,7 @@ func setupLogOutput() {
 func main() {
 	setupLogOutput()
 	// Swagger 2.0 Meta Information
-	docs.SwaggerInfo.Title = "suparlan test - Video API"
+	docs.SwaggerInfo.Title = "alan test - Video API"
 	docs.SwaggerInfo.Description = "kiw kiw"
 	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Host = "alan-test-app.herokuapp.com"
@@ -45,8 +45,6 @@ func main() {
 	defer videoRepository.CloseDB()
 	server := gin.New()
 	server.Use(gin.Recovery(), gin.Logger())
-	server.Static("/css", "./templates/css")
-	server.LoadHTMLGlob("templates/*.html")
 
 	videoAPI := api.NewVideoAPI(loginController, videoController)
 
