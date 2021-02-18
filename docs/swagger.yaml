@@ -196,13 +196,13 @@ paths:
       tags:
       - videos
 securityDefinitions:
-  bearer:
+  bearerAuth:
     in: header
     name: Authorization
     type: apiKey
    securitySchemes:
-    bearer:            
+    bearerAuth:            
       type: http
       scheme: bearer
-      bearerFormat: JWT  
+      bearerFormat: JWT
 swagger: "2.0"

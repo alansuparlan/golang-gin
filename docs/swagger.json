@@ -137,9 +137,6 @@
                 "security": [
                     {
                         "bearerAuth": []
-                    },
-                    {
-                        "bearerAuth": []
                     }
                 ],
                 "description": "Update a single video",
@@ -194,9 +191,6 @@
             },
             "delete": {
                 "security": [
-                    {
-                        "bearerAuth": []
-                    },
                     {
                         "bearerAuth": []
                     }
@@ -312,14 +306,14 @@
         }
     },
     "securityDefinitions": {
-        "bearer": {
+        "bearerAuth": {
             "type": "apiKey",
             "name": "Authorization",
             "in": "header"
         }
     },
      "securitySchemes":{
-    "bearer":{        
+    "bearerAuth":{        
       "type":"https",
       "scheme": "bearer",
       "bearerFormat": "JWT"

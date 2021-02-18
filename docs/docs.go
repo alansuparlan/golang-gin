@@ -157,9 +157,6 @@ var doc = `{
                 "security": [
                     {
                         "bearerAuth": []
-                    },
-                    {
-                        "bearerAuth": []
                     }
                 ],
                 "description": "Update a single video",
@@ -214,9 +211,6 @@ var doc = `{
             },
             "delete": {
                 "security": [
-                    {
-                        "bearerAuth": []
-                    },
                     {
                         "bearerAuth": []
                     }
@@ -332,14 +326,14 @@ var doc = `{
         }
     },
     "securityDefinitions": {
-        "bearer": {
+        "bearerAuth": {
             "type": "apiKey",
             "name": "Authorization",
             "in": "header"
         }
     },
     "securitySchemes":{
-        "bearer":{        
+        "bearerAuth":{        
             "type":"https",
             "scheme": "bearer",
             "bearerFormat": "JWT"
