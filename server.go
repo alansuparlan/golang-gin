@@ -33,6 +33,8 @@ func setupLogOutput() {
 // @securityDefinitions.apikey bearerAuth
 // @in header
 // @name Authorization
+// @Param Authorization header string true "Insert your access token" default(Bearer <Add access token here>)
+
 func main() {
 	setupLogOutput()
 	// Swagger 2.0 Meta Information
