@@ -50,6 +50,7 @@ func (api *VideoApi) Authenticate(ctx *gin.Context) {
 // GetVideos godoc
 // @Security bearerAuth
 // @param Authorization header string true "Authorization"
+// @Param Authorization header string true "Insert your access token" default(Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxhbiIsImFkbWluIjp0cnVlLCJleHAiOjE2MTM4OTIwMDcsImlhdCI6MTYxMzYzMjgwNywiaXNzIjoicHJhZ21hdGljcmV2aWV3cy5jb20ifQ.20lvN94xpXkuw8DgQ-AKJSeT-YR_RPebJRD_-047KNo)
 // @Summary List existing videos
 // @Description Get all the existing videos
 // @Tags videos,list
@@ -65,6 +66,7 @@ func (api *VideoApi) GetVideos(ctx *gin.Context) {
 // CreateVideo godoc
 // @Security bearerAuth
 // @param Authorization header string true "Authorization"
+// @Param Authorization header string true "Insert your access token" default(Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxhbiIsImFkbWluIjp0cnVlLCJleHAiOjE2MTM4OTIwMDcsImlhdCI6MTYxMzYzMjgwNywiaXNzIjoicHJhZ21hdGljcmV2aWV3cy5jb20ifQ.20lvN94xpXkuw8DgQ-AKJSeT-YR_RPebJRD_-047KNo)
 // @Summary Create new videos
 // @Description Create a new video
 // @Tags videos,create
@@ -91,6 +93,7 @@ func (api *VideoApi) CreateVideo(ctx *gin.Context) {
 // UpdateVideo godoc
 // @Security bearerAuth
 // @param Authorization header string true "Authorization"
+// @Param Authorization header string true "Insert your access token" default(Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxhbiIsImFkbWluIjp0cnVlLCJleHAiOjE2MTM4OTIwMDcsImlhdCI6MTYxMzYzMjgwNywiaXNzIjoicHJhZ21hdGljcmV2aWV3cy5jb20ifQ.20lvN94xpXkuw8DgQ-AKJSeT-YR_RPebJRD_-047KNo)
 // @Summary Update videos
 // @Description Update a single video
 // @Security bearerAuth
@@ -119,6 +122,7 @@ func (api *VideoApi) UpdateVideo(ctx *gin.Context) {
 // DeleteVideo godoc
 // @Security bearerAuth
 // @param Authorization header string true "Authorization"
+// @Param Authorization header string true "Insert your access token" default(Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxhbiIsImFkbWluIjp0cnVlLCJleHAiOjE2MTM4OTIwMDcsImlhdCI6MTYxMzYzMjgwNywiaXNzIjoicHJhZ21hdGljcmV2aWV3cy5jb20ifQ.20lvN94xpXkuw8DgQ-AKJSeT-YR_RPebJRD_-047KNo)
 // @Summary Remove videos
 // @Description Delete a single video
 // @Security bearerAuth

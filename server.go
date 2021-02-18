@@ -10,6 +10,7 @@ import (
 	"github.com/alansuparlan/golang-gin/middlewares"
 	"github.com/alansuparlan/golang-gin/repository"
 	"github.com/alansuparlan/golang-gin/service"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files" // swagger embed files
 	ginSwagger "github.com/swaggo/gin-swagger"
@@ -46,7 +47,7 @@ func main() {
 	docs.SwaggerInfo.Schemes = []string{"https"}
 	defer videoRepository.CloseDB()
 	server := gin.New()
-	server.Use(gin.Recovery(), gin.Logger())
+	server.Use(gin.Recovery(), gin.Logger(), cors.Default())
 
 	videoAPI := api.NewVideoAPI(loginController, videoController)
 
