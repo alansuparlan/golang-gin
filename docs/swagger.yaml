@@ -197,4 +197,9 @@ paths:
       summary: Update videos
       tags:
       - videos
+securityDefinitions:
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
 swagger: "2.0"
