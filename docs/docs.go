@@ -332,14 +332,14 @@ var doc = `{
         }
     },
     "securityDefinitions": {
-        "bearerAuth": {
+        "bearer": {
             "type": "apiKey",
             "name": "Authorization",
             "in": "header"
         }
     },
     "securitySchemes":{
-        "bearerAuth":{        
+        "bearer":{        
             "type":"https",
             "scheme": "bearer",
             "bearerFormat": "JWT"

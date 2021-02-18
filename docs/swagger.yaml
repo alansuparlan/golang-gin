@@ -156,7 +156,6 @@ paths:
             $ref: '#/definitions/dto.Response'
       security:
       - bearerAuth: []
-      - bearerAuth: []
       summary: Remove videos
       tags:
       - videos
@@ -193,22 +192,17 @@ paths:
             $ref: '#/definitions/dto.Response'
       security:
       - bearerAuth: []
-      - bearerAuth: []
       summary: Update videos
       tags:
       - videos
 securityDefinitions:
-  bearerAuth:
+  bearer:
     in: header
     name: Authorization
     type: apiKey
-    # 1) Define the security scheme type (HTTP bearer)
-  securitySchemes:
-    bearerAuth:            # arbitrary name for the security scheme
-      type: https
+   securitySchemes:
+    bearer:            
+      type: http
       scheme: bearer
-      bearerFormat: JWT    # optional, arbitrary value for documentation purposes
-# 2) Apply the security globally to all operations
-security:
-  - bearerAuth: []         # use the same name as above
+      bearerFormat: JWT  
 swagger: "2.0"
