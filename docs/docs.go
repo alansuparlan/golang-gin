@@ -340,7 +340,7 @@ var doc = `{
     },
     "securitySchemes":{
         "bearerAuth":{        
-            "type":"http",
+            "type":"https",
             "scheme": "bearer",
             "bearerFormat": "JWT"
         }
