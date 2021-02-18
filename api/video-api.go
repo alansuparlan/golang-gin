@@ -49,6 +49,7 @@ func (api *VideoApi) Authenticate(ctx *gin.Context) {
 
 // GetVideos godoc
 // @Security bearerAuth
+// @param Authorization header string true "Authorization"
 // @Summary List existing videos
 // @Description Get all the existing videos
 // @Tags videos,list
@@ -63,6 +64,7 @@ func (api *VideoApi) GetVideos(ctx *gin.Context) {
 
 // CreateVideo godoc
 // @Security bearerAuth
+// @param Authorization header string true "Authorization"
 // @Summary Create new videos
 // @Description Create a new video
 // @Tags videos,create
@@ -88,6 +90,7 @@ func (api *VideoApi) CreateVideo(ctx *gin.Context) {
 
 // UpdateVideo godoc
 // @Security bearerAuth
+// @param Authorization header string true "Authorization"
 // @Summary Update videos
 // @Description Update a single video
 // @Security bearerAuth
@@ -115,6 +118,7 @@ func (api *VideoApi) UpdateVideo(ctx *gin.Context) {
 
 // DeleteVideo godoc
 // @Security bearerAuth
+// @param Authorization header string true "Authorization"
 // @Summary Remove videos
 // @Description Delete a single video
 // @Security bearerAuth
