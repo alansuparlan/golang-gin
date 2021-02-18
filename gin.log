@@ -9,8 +9,8 @@
 [GIN-debug] DELETE /api/v1/videos/:id        --> github.com/alansuparlan/golang-gin/api.(*VideoApi).DeleteVideo-fm (4 handlers)
 [GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :5000
-[GIN] 2021/02/18 - 11:39:59 | 200 |     434.458µs |             ::1 | GET      "/swagger/index.html"
-[GIN] 2021/02/18 - 11:40:00 | 200 |     271.212µs |             ::1 | GET      "/swagger/swagger-ui.css"
-[GIN] 2021/02/18 - 11:40:00 | 200 |     796.435µs |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
-[GIN] 2021/02/18 - 11:40:00 | 200 |     671.291µs |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
-[GIN] 2021/02/18 - 11:40:00 | 200 |      522.41µs |             ::1 | GET      "/swagger/doc.json"
+[GIN] 2021/02/18 - 12:46:45 | 200 |     286.855µs |             ::1 | GET      "/swagger/index.html"
+[GIN] 2021/02/18 - 12:46:45 | 200 |     295.538µs |             ::1 | GET      "/swagger/swagger-ui.css"
+[GIN] 2021/02/18 - 12:46:45 | 200 |     657.471µs |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
+[GIN] 2021/02/18 - 12:46:45 | 200 |     279.901µs |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2021/02/18 - 12:46:46 | 200 |     556.084µs |             ::1 | GET      "/swagger/doc.json"
