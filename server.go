@@ -43,7 +43,7 @@ func main() {
 	docs.SwaggerInfo.Version = "1.0"
 	docs.SwaggerInfo.Host = "alan-test-app.herokuapp.com"
 	docs.SwaggerInfo.BasePath = "/api/v1"
-	docs.SwaggerInfo.Schemes = []string{"https"}
+	docs.SwaggerInfo.Schemes = []string{"http", "https"}
 	defer videoRepository.CloseDB()
 	server := gin.New()
 	server.Use(gin.Recovery(), gin.Logger(), cors.Default())
